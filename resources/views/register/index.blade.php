@@ -18,7 +18,7 @@
         </x-card-header>
 
         <x-card-body>
-            <x-form action="{{ route('login.store') }}" method="POST">
+            <x-form action="{{ route('register') }}" method="POST">
                 <x-form-item>
                     <x-label required> {{ __('Name') }} </x-label>
                     <x-input name="name" autofocus/>
@@ -40,7 +40,7 @@
                 </x-form-item>
                 
                 <x-form-item>
-                    <x-checkbox name="remember">
+                    <x-checkbox name="agreement">
                         {{ __('I accept the user agreement') }}
                     </x-checkbox>
                 </x-form-item>

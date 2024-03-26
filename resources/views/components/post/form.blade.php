@@ -1,6 +1,6 @@
 @props(['post' => null])
 
-<x-form {{ $attributes }} method="POST">
+<x-form {{ $attributes }}>
     <x-form-item>
         <x-label required> {{ __('Name post') }} </x-label>
         <x-input name="title" value="{{ $post->title ?? '' }}" autofocus />
@@ -14,4 +14,4 @@
     <x-button type="submit">
         {{ __('Create post') }}
     </x-button> 
-</x-form>
+</x-form> 
